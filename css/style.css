@@ -1,0 +1,298 @@
+@font-face{
+    font-family: 'Karla-Regular';
+    src: url('../fonts/Karla-Regular.ttf');
+}
+@font-face{
+    font-family: 'Karla-Bold';
+    src: url('../fonts/Karla-Bold.ttf');
+}
+@font-face{
+    font-family: 'Karla-Italic';
+    src: url('../fonts/Karla-Italic.ttf');
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla-Bold',sans-serif;
+    font-size: 10px;
+    background-color: #e9ebee;
+}
+
+/*---------------------HEADER--------------------*/
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: #222222;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.10), 0 2px 2px rgba(0,0,0,0.10);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    overflow: hidden;
+}
+#headerWrapper{    
+    width: 800px;
+    height: 100px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+.logo{
+    height: 50px;
+    margin: 5px 0;
+}
+#headerRechts a{
+    float: right;
+}
+#headerRechts{
+    float:right;
+    height: 40px;
+    display: inline;
+    margin: 10px 0;
+}
+
+#headerRechts img{
+    height: 40px;
+    width: 50px;
+    float: left;
+    border-radius:2px;
+    vertical-align: middle;
+}
+#headerRechts h1{
+    color: white;
+    margin: 10.5px 10px;
+}
+
+#Logout{
+    border-left: 1px solid white;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+/*----------MAIN--------------*/
+textarea {
+    font-family: Karla-Regular;
+}
+
+input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label {
+    font-size: 1.25em;
+    color: #222222;
+    border-radius:20px;
+}
+
+main{
+    width: 800px;
+    max-width: 95%;
+    margin: 80px auto;
+}
+#posts{
+    margin: 0;
+    padding: 0;
+}
+.profilephotoKlein ,#postForm img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    float: left;
+    border-radius: 2px;
+}
+#posts li,#postForm,#profileContainer{
+    width: 95%;
+    padding: 2.5%;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+}
+#posts div{
+    display: inline-block;
+    height: 40px;
+    margin-left: 10px;
+}
+#posts p,#postForm p{
+    font-size: 2.4em;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
+h2{
+    font-family: 'Karla-Bold',sans-serif;
+    float: left;
+    color: #90949c;
+    margin: 0;
+    clear: both;
+    font-size: 1.2em;
+    display: inline;
+}
+h1{
+    float: left;
+    font-size: 1.6em;
+    color: #E16360;
+    margin: 0;
+    margin-bottom: 0.2em;
+    display: inline;
+}
+#postFormForm{
+    width: calc(100% - 50px);
+    float: left;
+    margin-left: 10px;
+}
+#postFormForm textarea{
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    resize: none;
+    border: 0;
+}
+#postPost{
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #E16360;
+    color: white;
+    float: right;
+    width:80px;
+    border: 0;
+    font-family: Karla-Bold;
+}
+#posts .postPhoto{
+    margin-top: 1em;
+    width: 100%;
+    max-height: 70em;
+    object-fit: cover;
+}
+.profilephotoLike{
+    height: 15px;
+    width: 15px;
+    float: right;
+    border-radius: 2px;
+}
+.likeLink{
+    margin-top: 1em;
+    padding: 5px 15px;
+    font-size: 1.6em;
+    border-radius: 2px;
+    background-color: #E16360;
+    color: white;
+    float: left;
+}
+
+/*----------FORM--------------*/
+
+#loginForm{
+    width: 95%;
+    padding: 2.5%;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 1px 1px rgba(0,0,0,0.12);
+    border-radius: 2px;
+}
+#loginForm input,#loginForm textarea{
+    width: 96%;
+    margin-bottom: 2em;
+    padding: 1.5% 2% ;
+    background-color: #efefef;
+    border-radius:4px;
+    border:none;
+}
+#loginForm .submit{
+    width: 25%;
+    background-color: #E16360;
+    color: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.1);
+    margin: 0;
+    cursor: pointer;
+    border-radius:20px;
+    font-size: 1.6em;
+
+}
+#loginForm .submit:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 2px 1px rgba(0,0,0,0.1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1); 
+}
+#loginForm h1{
+    color: #3b3b3d;
+}
+#loginForm textarea{
+    resize: vertical;
+}
+.formBlok{
+    width: 100%;
+    clear: both;
+} 
+.formBlok2{
+    width:100%; 
+}
+#loginForm .formBlok2 input{
+    width: 20px;
+    float: left;
+}
+#loginForm .geboorteInput{
+    width: 29.4%;
+}
+#loginForm .geboorteInputMidden{
+    margin: 0 2.5%; 
+}
+.ui-widget{
+    font-size: 1.6em !important;
+}
+mark{
+    font-size: 1.6em;
+    background-color: orange;
+    float: right;
+}
+/*--------------------profile----------------*/
+#profileContainer img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    float: left;
+    border-radius: 2px;
+}
+#profileContainer h3{
+    color: #E16360;
+    width: 100%;
+    font-size: 3em;
+    float: left;
+    display: inline;
+    margin: 0 0 0.5em 0;
+}
+#profileContainer div{
+    display: inline-block;
+    width: calc(100% - 220px);
+    margin-left: 20px;
+}
+#profileContainer h1{
+    color: #3b3b3d;
+    width: 100%;
+}
+#profileContainer p{
+    border-top: 1px solid black;
+    display: inline-block;
+    padding: 1em 0 0 0;
+    width: 100%;
+    font-size: 1.6em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+}
